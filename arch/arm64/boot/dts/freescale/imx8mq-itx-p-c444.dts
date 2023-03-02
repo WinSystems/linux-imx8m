@@ -694,8 +694,8 @@ multi_protocol_serial2: &uart1 {
 	pinctrl-0 = <&pinctrl_uart1>, <&pinctrl_serial2_gpio>;
 	assigned-clocks = <&clk IMX8MQ_CLK_UART1>;
 	assigned-clock-parents = <&clk IMX8MQ_CLK_25M>;
-	cts-gpios = <&gpio5 27 GPIO_ACTIVE_LOW>;
-	rts-gpios = <&gpio5 26 GPIO_ACTIVE_LOW>;
+	cts-gpios = <&gpio5 27 GPIO_ACTIVE_HIGH>;
+	rts-gpios = <&gpio5 26 GPIO_ACTIVE_HIGH>;
 	status = "okay";
 };
 
@@ -704,8 +704,8 @@ multi_protocol_serial1: &uart2 {
         pinctrl-0 = <&pinctrl_uart2>, <&pinctrl_serial1_gpio>;
         assigned-clocks = <&clk IMX8MQ_CLK_UART2>;
         assigned-clock-parents = <&clk IMX8MQ_CLK_25M>;
-	cts-gpios = <&gpio5 29 GPIO_ACTIVE_LOW>;
-	rts-gpios = <&gpio5 28 GPIO_ACTIVE_LOW>;
+	cts-gpios = <&gpio5 29 GPIO_ACTIVE_HIGH>;
+	rts-gpios = <&gpio5 28 GPIO_ACTIVE_HIGH>;
         status = "okay";
 };
 
